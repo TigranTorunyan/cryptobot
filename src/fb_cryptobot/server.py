@@ -13,8 +13,15 @@ def get_bot_response(message):
     the user said. Replace this function with one connected to chatbot."""
     return "This is a dummy response to '{}'".format(message)
 
+print(VERIFY_TOKEN)
 def verify_webhook(request):
     # return request.args.get("hub.challenge")
+    '''if request.args.get("hub.verify_token") != VERIFY_TOKEN:
+        return request.args.get("hub.challenge")
+    else:
+        return "incorrect"'''
+    #print(request.args.get("hub.verify_token"))
+    #print(request.args.get("hub.challenge"))
     if request.args.get("hub.verify_token") == VERIFY_TOKEN:
         return request.args.get("hub.challenge")
     else:
