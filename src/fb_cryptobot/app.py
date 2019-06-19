@@ -16,12 +16,8 @@ FB_API_URL = 'https://graph.facebook.com/v2.6/me/messages'
 VERIFY_TOKEN = '5mLaIgaGrZOK//TARbN74bYYpZDFyfM0r0IC8lnBeGA=' # <paste your verify token here>
 PAGE_ACCESS_TOKEN = 'EAASACHW7vmEBAGIlMszcVklC47CIZBf4IpQZAKWfboNi8FHcZBC9ZALgmW8QYBQZAuKLRVAV4InSb5t52ZCdpTbJM97LFkBlV1IKwA2JKumXLl0ghDbOzhZALMXGinUuB11ZCAfOT2VDdFmre6mF7KI6sBLDVBlaETvLAZAdBmVjTcwZDZD' # paste your page access token here>"
 
-def get_bot_response(message):
-    """This is just a dummy function, returning a variation of what
-    the user said. Replace this function with one connected to chatbot."""
-    return "This is a dummy response to '{}'".format(message)
 
-print(VERIFY_TOKEN)
+
 def verify_webhook(request):
     # return request.args.get("hub.challenge")
     '''if request.args.get("hub.verify_token") != VERIFY_TOKEN:
