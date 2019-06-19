@@ -1,0 +1,3 @@
+*.swp
+src/ngrok/client/assets/
+src/ngrok/server/assets/
